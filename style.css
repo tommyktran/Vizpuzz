@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "Blackthorns";
+    src: url(/fonts/BlackthornsDemoRegular-X0MZ.ttf);
+}
+
+/* Header */
+
+header {
+    margin-bottom: 20px;
+    width: 346px;
+}
+#website-title {
+    font-family: Blackthorns;
+    font-size: 35px;
+    margin: 0;
+
+}
+#website-subtitle {
+    font-family: Blackthorns;
+    font-size: 17px;
+    margin-top: -5px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+/* Body */
+body {
+    color:white;
+
+    padding-top: 20px;
+    text-align: center;
+    font-family: arial;
+
+    display: flex;
+    align-items: center;
+
+    
+}
+body {
+    background-color: #36393E;
+}
+.wrapper2 {
+    background-color: hsl(218 7% 25% / 1);
+}
+.wrapper2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 auto;
+
+    border: 3px solid rgba(255,255,255,.2);
+    padding: 15px;
+}
+.wrapper {
+    margin: 0 auto;
+    /* width: 80%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#board1 {
+    margin: 0 auto;
+    margin-bottom: 5px; 
+    /* box-shadow: 0 0 20px -2px rgba(255,255,255,.4); */
+}
+#movesToVisualize {
+    font-weight: bold;
+    font-size: 19px;
+    display: block;
+    padding-top: 10px;
+}
+
+p {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /* color: #222; */
+}
+
+#popup {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #555;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+#close {
+    background-color: initial;
+    border: none;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    top: 15px;
+    right: 10px;
+}
+#open {
+    background-color: #8e66c1;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+}
+#submit {
+    width: 65px;
+    margin: 0 auto;
+}
+#controlPanel {
+    width: 400px;
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+    
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+canvas {
+    margin: 0 auto;
+}
+/* Media queries */
+@media (min-width: 800px) {
+    
+}
+
+/* #board1 {
+    width: auto !important;
+} */

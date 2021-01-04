@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chessboard-1.0.0.min.css">
+    <title></title>
+</head>
+<body id="body">
+    <div class="wrapper2" id="capture">
+        <header>
+            <h1 id="website-title">Blind Tactic</h1>
+            <h2 id="website-subtitle"></h2>
+            <h2 id="puzzleRating"></h2>
+            <p id="puzzleComment">Visualize these moves and find the tactic: <span id="movesToVisualize"></span></p>
+
+        </header>
+        <div class="wrapper">
+            <div id="board1" style="width: 400px"></div>
+        </div>
+    </div>
+    
+    <div id="popup">
+        <form>
+            <label for="level">Visualization Level:</label><br>
+            <input type="text" id="level" name="level"><br>
+            <label for="rating">Puzzle Rating:</label><br>
+            <input type="text" id="rating" name="rating"><br>
+            <label for="fen">FEN:</label><br>
+            <input type="text" id="fen" name="fen"><br>
+            <label for="moves">Moves:</label><br>
+            <input type="text" id="moves" name="moves"><br>
+            <br>
+        </form> 
+        <button id="submit" type='button' onclick="submit()">Submit</button>
+        <button id="close" onclick="hideModal()">X</button>
+    </div>
+    <div id="controlPanel">
+        <button onclick="flipBoard()">Flip</button>
+        <button onclick="capture()">Capture</button>
+        <button onclick="hideCanvas()">Hide Canvas</button>
+
+    </div>
+
+    <button id="open" onclick="showModal()">+</button>
+    <!-- <p id=""><span id=""></span></p>
+    <button onclick=""></button> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="chess.min.js"></script>
+    <script src="chessboard-1.0.0.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="html2canvas.min.js"></script>
+
+</body>
+</html>
